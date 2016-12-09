@@ -23,14 +23,14 @@ We're using the full Android factory image for this method (not the OTA file). N
 * Extract the ZIP, take note of the file ```flash-all.sh```
 
 #### SuperSU
-* Download the flashable zip [here](https://plus.google.com/+Chainfire/posts/jpR76YEgaM9?sfc=true) *(at the time of this writing, the latest version was SuperSU v2.78 SR5)*
+* Download the flashable ZIP [here](https://plus.google.com/+Chainfire/posts/jpR76YEgaM9?sfc=true) *(at the time of this writing, the latest version was SuperSU v2.78 SR5)*
 
 #### TWRP
 Download the latest version for your Pixel. Make sure to download both the ```[filename].img``` and ```[filename].zip```
 * [Google Pixel](https://twrp.me/devices/googlepixel.html)
 * [Google Pixel XL](https://twrp.me/devices/googlepixelxl.html)
 
-Copy the TWRP zip and SuperSU zip to your Pixel.
+Copy the TWRP ```[filename].zip``` and SuperSU ```[filename].zip``` to your Pixel.
 
 ## Installation
 ### Android factory images
@@ -99,7 +99,7 @@ fastboot boot [filename].img
 ### SuperSu
 #### Rooting the Pixel
 At this point you should still be in TWRP.
-* Install the SuperSU zip on the Pixel via TWRP to grant root access on the device
+* Install the SuperSU ```[filename].zip``` on the Pixel via TWRP to grant root access on the device
 * Reboot the device
 
 ## Wrap up
