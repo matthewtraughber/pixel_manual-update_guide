@@ -1,5 +1,5 @@
-# Manual OTA installation on a potentially modified Google Pixel
-This guide will document how to manually install an OTA update on a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the OTA).
+# Manual update of a potentially modified Google Pixel
+This guide will document how to manually update a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the update).
 
 > #### NOTE!
 > * This guide assumes you are familiar with command-line terminals and adb / fastboot
@@ -43,7 +43,7 @@ sleep 5
 fastboot flash radio [radio-filename].img
 fastboot reboot-bootloader
 sleep 5
-fastboot -w update [image-filename].zip 
+fastboot -w update [image-filename].zip
 ```
 * You'll be running these commands manually, removing the wipe option ```-w``` from the last command
 * Connect Pixel to computer, ensure USB debugging is enabled on the device
@@ -70,7 +70,7 @@ fastboot reboot-bootloader
 ```
 * Flash the new image (remove ```-w``` to keep data)
 ```bash
-fastboot update [image-filename].zip 
+fastboot update [image-filename].zip
 ```
 * Once this completes, reboot the Pixel
 ```bash
@@ -104,9 +104,3 @@ At this point you should still be in TWRP.
 
 ## Wrap up
 And that's about it. You should have the latest Android factory image installed with root access, all without losing any data or settings. However, any changes made that required root previously (such as build.prop edits) will need to be replicated.
-
-
-
-
-
-
