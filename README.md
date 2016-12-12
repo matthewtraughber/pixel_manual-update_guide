@@ -1,4 +1,4 @@
-# Manually updating a potentially modified Google Pixel
+# Google Pixel manual updates
 This guide will document how to manually update a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the update).
 
 > #### NOTE!
