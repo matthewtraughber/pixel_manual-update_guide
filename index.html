@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+    <meta name="description" content="Pixel manual-update guide : Guide to manually update a potentially modified Google Pixel">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Pixel manual-update guide by matthewtraughber</title>
+    <title>Pixel manual-update guide</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/matthewtraughber/pixel_manual-update_guide">View on GitHub</a>
-    <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Pixel manual-update guide</h1>
-            <h2>Guide to manually update a potentially modified Google Pixel</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/matthewtraughber/pixel_manual-update_guide">View on GitHub</a>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/matthewtraughber/pixel_manual-update_guide/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/matthewtraughber/pixel_manual-update_guide/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+          <h1 id="project_title">Pixel manual-update guide</h1>
+          <h2 id="project_tagline">Guide to manually update a potentially modified Google Pixel</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/matthewtraughber/pixel_manual-update_guide/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/matthewtraughber/pixel_manual-update_guide/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
-<a id="manual-update-of-a-potentially-modified-google-pixel" class="anchor" href="#manual-update-of-a-potentially-modified-google-pixel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manual update of a potentially modified Google Pixel</h1>
+<a id="manually-updating-a-potentially-modified-google-pixel" class="anchor" href="#manually-updating-a-potentially-modified-google-pixel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manually updating a potentially modified Google Pixel</h1>
 
 <p>This guide will document how to manually update a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the update).</p>
 
@@ -108,7 +93,7 @@
 <h4>
 <a id="twrp" class="anchor" href="#twrp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TWRP</h4>
 
-<p>Download the latest version for your Pixel. Make sure to download both the <code>[filename].img</code> and <code>[filename].zip</code></p>
+<p>Download the latest version for your Pixel (minimum reqired version is alpha2). Make sure to download both the <code>[filename].img</code> and <code>[filename].zip</code></p>
 
 <ul>
 <li><a href="https://twrp.me/devices/googlepixel.html">Google Pixel</a></li>
@@ -191,7 +176,7 @@ fastboot -w update [image-filename].zip</pre></div>
 <h4>
 <a id="flashing-twrp-temporarily-or-permanent" class="anchor" href="#flashing-twrp-temporarily-or-permanent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flashing TWRP (temporarily or permanent)</h4>
 
-<p>There are two installation options. You can 'permanently' install the TWRP alpha over the stock recovery, or just temporarily boot into it to root the Pixel.</p>
+<p>There are two installation options. You can 'permanently' install TWRP over the stock recovery, or just temporarily boot into it to root the Pixel.</p>
 
 <ul>
 <li>In the terminal, navigate to the directory where the TWRP <code>[filename].img</code> exists</li>
@@ -231,21 +216,17 @@ fastboot -w update [image-filename].zip</pre></div>
 
 <p>And that's about it. You should have the latest Android factory image installed with root access, all without losing any data or settings. However, any changes made that required root previously (such as build.prop edits) will need to be replicated.</p>
       </section>
+    </div>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/matthewtraughber">matthewtraughber</a> can be found on <a href="https://github.com/matthewtraughber/pixel_manual-update_guide">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pixel manual-update guide maintained by <a href="https://github.com/matthewtraughber">matthewtraughber</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
-
     </div>
 
     
+
   </body>
 </html>
