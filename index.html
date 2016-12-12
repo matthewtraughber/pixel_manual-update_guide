@@ -17,18 +17,18 @@
         $('#main_content').headsmart()
       })
     </script>
-    <title>Pixel manual-ota guide by matthewtraughber</title>
+    <title>Pixel manual-update guide by matthewtraughber</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/matthewtraughber/pixel_manual-ota_guide">View on GitHub</a>
+    <a id="forkme_banner" href="https://github.com/matthewtraughber/pixel_manual-update_guide">View on GitHub</a>
     <div class="shell">
 
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>Pixel manual-ota guide</h1>
-            <h2>Guide to manual OTA installation on a potentially modified Google Pixel</h2>
+            <h1>Pixel manual-update guide</h1>
+            <h2>Guide to manually update a potentially modified Google Pixel</h2>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -37,7 +37,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a href="https://github.com/matthewtraughber/pixel_manual-ota_guide/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/matthewtraughber/pixel_manual-ota_guide/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+          <a href="https://github.com/matthewtraughber/pixel_manual-update_guide/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/matthewtraughber/pixel_manual-update_guide/tarball/master" class="tgz"><em>download</em> .TGZ</a>
         </span>
       </section>
 
@@ -47,9 +47,9 @@
 
       <section id="main_content">
         <h1>
-<a id="manual-ota-installation-on-a-potentially-modified-google-pixel" class="anchor" href="#manual-ota-installation-on-a-potentially-modified-google-pixel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manual OTA installation on a potentially modified Google Pixel</h1>
+<a id="manual-update-of-a-potentially-modified-google-pixel" class="anchor" href="#manual-update-of-a-potentially-modified-google-pixel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manual update of a potentially modified Google Pixel</h1>
 
-<p>This guide will document how to manually install an OTA update on a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the OTA).</p>
+<p>This guide will document how to manually update a rooted (doesn't have to be) Google Pixel while keeping data (including how to re-root / install TWRP after taking the update).</p>
 
 <blockquote>
 <h4>
@@ -101,7 +101,7 @@
 <a id="supersu" class="anchor" href="#supersu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SuperSU</h4>
 
 <ul>
-<li>Download the flashable zip <a href="https://plus.google.com/+Chainfire/posts/jpR76YEgaM9?sfc=true">here</a> <em>(at the time of this writing, the latest version was SuperSU v2.78 SR5)</em>
+<li>Download the flashable ZIP <a href="https://plus.google.com/+Chainfire/posts/jpR76YEgaM9?sfc=true">here</a> <em>(at the time of this writing, the latest version was SuperSU v2.78 SR5)</em>
 </li>
 </ul>
 
@@ -115,7 +115,7 @@
 <li><a href="https://twrp.me/devices/googlepixelxl.html">Google Pixel XL</a></li>
 </ul>
 
-<p>Copy the TWRP zip and SuperSU zip to your Pixel.</p>
+<p>Copy the TWRP <code>[filename].zip</code> and SuperSU <code>[filename].zip</code> to your Pixel.</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
@@ -136,7 +136,7 @@ sleep 5
 fastboot flash radio [radio-filename].img
 fastboot reboot-bootloader
 sleep 5
-fastboot -w update [image-filename].zip </pre></div>
+fastboot -w update [image-filename].zip</pre></div>
 
 <ul>
 <li>You'll be running these commands manually, removing the wipe option <code>-w</code> from the last command</li>
@@ -175,7 +175,7 @@ fastboot -w update [image-filename].zip </pre></div>
 <li>Flash the new image (remove <code>-w</code> to keep data)</li>
 </ul>
 
-<div class="highlight highlight-source-shell"><pre>fastboot update [image-filename].zip </pre></div>
+<div class="highlight highlight-source-shell"><pre>fastboot update [image-filename].zip</pre></div>
 
 <ul>
 <li>Once this completes, reboot the Pixel</li>
@@ -222,7 +222,7 @@ fastboot -w update [image-filename].zip </pre></div>
 <p>At this point you should still be in TWRP.</p>
 
 <ul>
-<li>Install the SuperSU zip on the Pixel via TWRP to grant root access on the device</li>
+<li>Install the SuperSU <code>[filename].zip</code> on the Pixel via TWRP to grant root access on the device</li>
 <li>Reboot the device</li>
 </ul>
 
@@ -235,7 +235,7 @@ fastboot -w update [image-filename].zip </pre></div>
       <footer>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/matthewtraughber">matthewtraughber</a> can be found on <a href="https://github.com/matthewtraughber/pixel_manual-ota_guide">GitHub</a></p>
+            <p>this project by <a href="https://github.com/matthewtraughber">matthewtraughber</a> can be found on <a href="https://github.com/matthewtraughber/pixel_manual-update_guide">GitHub</a></p>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
