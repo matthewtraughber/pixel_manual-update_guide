@@ -2,7 +2,7 @@ title: Pixel manual-update guide
 description: Guide to manually update a potentially modified Google Pixel
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 
 gems:
   - jekyll-mentions
