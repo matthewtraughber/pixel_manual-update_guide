@@ -26,7 +26,7 @@ We're using the full Android factory image for this method (not the OTA file). N
 * Download the flashable ZIP [here](https://plus.google.com/+Chainfire/posts/jpR76YEgaM9?sfc=true) *(at the time of this writing, the latest version was SuperSU v2.78 SR5)*
 
 #### TWRP
-Download the latest version for your Pixel (minimum reqired version is alpha2). Make sure to download both the ```[filename].img``` and ```[filename].zip```
+Download the latest version for your Pixel (minimum required version is alpha2 - NOTE: RC1 does not currently work with flashing SuperSU v2.78 SR5). Make sure to download both the ```[filename].img``` and ```[filename].zip```
 * [Google Pixel](https://twrp.me/devices/googlepixel.html)
 * [Google Pixel XL](https://twrp.me/devices/googlepixelxl.html)
 
